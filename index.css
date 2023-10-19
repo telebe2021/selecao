@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(3, 16, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lavender;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(8, 24, 43);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+button {
+    width: 140px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 2px orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid{
+    display: none;
+}
+.badbit{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 5%;
+}
+.conbit{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    width:100%;
+    margin-top:5% ;
+    margin-bottom:7% ;
+    gap: 5%;
+}
+.bad{
+    width: 47%;
+    height:100px;
+    background-color: rgb(142, 141, 171);
+}
+.con{
+    width:23%;
+    height: 100px;
+    background-color: blue;
+}
+
+@media screen and (min-width:650px) and (max-width:1024px) {
+    nav {
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    nav .grida {
+        width: 100%;
+    }
+
+    nav .gridb {
+        width: 100%;
+        display: none;
+    }
+
+    header button {
+        width: 25%;
+    }
+
+    .grid{
+        display: flex;
+        color: aliceblue;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        display: flex;
+    }
+
+    nav .grida {
+        width: 100%;
+    }
+
+    nav .gridb {
+        width: 100%;
+        display: none;
+    }
+
+    header button {
+        width: 25%;
+    }
+
+    nav .grid {
+        display: flex;
+        color: aliceblue;
+    }
+}
